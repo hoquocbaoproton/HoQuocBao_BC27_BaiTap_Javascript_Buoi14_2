@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Js14-2</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.0.2 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- EXERCISE 5 -->
+    <section id="ex5">
+      <h1>Exercise 5:</h1>
+      <div class="mb-3">
+        <label for="" class="form-label d-block">
+          📅 Tính ngày tháng năm
+        </label>
+        <input
+          type="number"
+          class="form-control w-25 mb-3 me-2 d-inline"
+          id="dateEx5"
+          placeholder="Date"
+        />
+        <input
+          type="number"
+          class="form-control w-25 mb-3 me-2 d-inline"
+          id="monthEx5"
+          placeholder="Month"
+        />
+        <input
+          type="number"
+          class="form-control w-25 mb-3 d-inline"
+          id="yearEx5"
+          placeholder="Year"
+        />
+        <div>
+          <button type="button" id="prevDateBtn" class="btn btn-primary me-3">
+            Ngày trước
+          </button>
+          <button type="button" id="nextDateBtn" class="btn btn-primary">
+            Ngày sau
+          </button>
+        </div>
+        <div>
+          <p id="exportTxtEx5" class="mt-3"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXERCISE 6 -->
+    <section id="ex6">
+      <h1>Exercise 6:</h1>
+      <div class="mb-3">
+        <label for="" class="form-label d-block"> 🗓️ Tính ngày </label>
+        <input
+          type="number"
+          class="form-control w-25 mb-3 me-2 d-inline"
+          id="monthEx6"
+          placeholder="Month"
+        />
+        <input
+          type="number"
+          class="form-control w-25 mb-3 me-2 d-inline"
+          id="yearEx6"
+          placeholder="Year"
+        />
+        <div>
+          <button type="button" id="calcDate" class="btn btn-primary">
+            Tính ngày
+          </button>
+        </div>
+        <div>
+          <p id="exportTxtEx6" class="mt-3"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXERCISE 7 -->
+
+    <section id="ex7">
+      <h1>Exercise 7:</h1>
+      <div class="mb-3 w-50">
+        <label for="" class="form-label">🔢 Đọc số</label>
+        <input
+          type="number"
+          class="form-control"
+          placeholder="Nhập số có 3 chữ số"
+          id="inputEx7"
+        />
+      </div>
+
+      <div>
+        <p id="exportTxtEx7"></p>
+      </div>
+
+      <div>
+        <button id="btnReadEx7" class="mt-3 mb-3 btn btn-primary">
+          Đọc số
+        </button>
+      </div>
+    </section>
+
+    <!-- EXERCISE 8 -->
+    <section id="ex8">
+      <h1>Exercise 8:</h1>
+      <h3>🗺️ Tìm sinh viên xa trường nhất</h3>
+      <div class="row">
+        <div class="mb-3 col-4 border-end">
+          <label for="" class="form-label">SINH VIÊN 1:</label>
+          <input type="text" class="form-control" id="name1" placeholder="" />
+          <label for="" class="form-label">Tọa độ x<sub>1</sub></label>
+          <input type="number" class="form-control" id="x1" placeholder="" />
+          <label for="" class="form-label">Tọa độ y<sub>1</sub></label>
+          <input type="number" class="form-control" id="y1" placeholder="" />
+        </div>
+        <div class="mb-3 col-4 border-end">
+          <label for="" class="form-label">SINH VIÊN 2:</label>
+          <input type="text" class="form-control" id="name2" placeholder="" />
+          <label for="" class="form-label">Tọa độ x<sub>2</sub></label>
+          <input type="number" class="form-control" id="x2" placeholder="" />
+          <label for="" class="form-label">Tọa độ y<sub>2</sub></label>
+          <input type="number" class="form-control" id="y2" placeholder="" />
+        </div>
+        <div class="mb-3 col-4">
+          <label for="" class="form-label">SINH VIÊN 3:</label>
+          <input type="text" class="form-control" id="name3" placeholder="" />
+          <label for="" class="form-label">Tọa độ x<sub>3</sub></label>
+          <input type="number" class="form-control" id="x3" placeholder="" />
+          <label for="" class="form-label">Tọa độ y<sub>3</sub></label>
+          <input type="number" class="form-control" id="y3" placeholder="" />
+        </div>
+      </div>
+      <div class="row">
+        <h5 class="mt-3">Trường học:</h5>
+        <div class="col-6 border-end">
+          <div class="mb-3">
+            <label for="" class="form-label"></label>
+            <input
+              type="number"
+              class="form-control"
+              id="x"
+              placeholder="Tọa độ x"
+            />
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="mb-3">
+            <label for="" class="form-label"></label>
+            <input
+              type="number"
+              class="form-control"
+              id="y"
+              placeholder="Tọa độ y"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <p id="exportTxtEx8"></p>
+      </div>
+
+      <div>
+        <button type="button" class="mt-3 btn btn-primary" id="compareBtnEx8">
+          So sánh
+        </button>
+      </div>
+    </section>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+
+    <script type="module" src="./ex5.js"></script>
+    <script type="module" src="./ex6.js"></script>
+    <script type="module" src="./ex7.js"></script>
+    <script type="module" src="./ex8.js"></script>
+  </body>
+</html>
