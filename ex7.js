@@ -8,8 +8,8 @@
  * 1. Dom lấy các giá trị, gán biến input
  * 2. xét số abc, ta có:
  * số hàng đơn vị => c = abc % 10
- * số hàng chục => bc = abc % 100
- * số hàng trăm => abc = abc % 1000
+ * số hàng chục => bc = (abc % 100) / 10 - (((abc % 100) / 10) % 1);
+ * số hàng trăm => abc = (abc - (abc % 100)) / 100
  * 3. sử dụng switch case để gán giá trị
  * vd: hàng trăm => case 1: Một trăm, case 2: hai trăm
  * vd: hàng chục => case 2: hai mươi, case 4: bố mươi
