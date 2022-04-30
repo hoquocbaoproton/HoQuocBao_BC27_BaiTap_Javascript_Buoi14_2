@@ -22,9 +22,9 @@ const calcDate = function () {
   const year = +document.getElementById('yearEx6').value;
   const exportTxtEx6 = document.getElementById('exportTxtEx6');
 
-  const exportDate = function (date) {
+  const exportDate = function (date, month, year) {
     exportTxtEx6.style.backgroundColor = '#fff';
-    exportTxtEx6.textContent = `số ngày của tháng: ${date}`;
+    exportTxtEx6.textContent = `số ngày của tháng ${month} / năm ${year} là: ${date}`;
   };
 
   let date;
@@ -39,10 +39,10 @@ const calcDate = function () {
     case 2:
       if (year % 400 === 0 || (year % 4 !== 0 && year % 4 === 0)) {
         date = 29;
-        exportDate(date);
+        exportDate(date, month, year);
       } else {
         date = 28;
-        exportDate(date);
+        exportDate(date, month, year);
       }
       break;
     case 1:
@@ -53,14 +53,14 @@ const calcDate = function () {
     case 10:
     case 12:
       date = 31;
-      exportDate(date);
+      exportDate(date, month, year);
       break;
     case 4:
     case 11:
     case 9:
     case 11:
       date = 30;
-      exportDate(date);
+      exportDate(date, month, year);
   }
 };
 
